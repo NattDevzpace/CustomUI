@@ -87,11 +87,14 @@
     [self addSubview:border];
 }
 
-- (void)setBackgroundColor:(UIColor *)backgroundColor forState:(UIControlState)state {
-    [self setBackgroundImage:[UIImage imageWithColor:backgroundColor] forState:state];
-}
+#pragma mark BG COLOR
+//- (void)setBackgroundColor:(UIColor *)backgroundColor forState:(UIControlState)state {
+//    [self setBackgroundImage:[UIImage imageWithColor:backgroundColor] forState:state];
+//}
+//
+//- (void)setBackgroundColor:(UIColor *)backgroundColor withCornerRadius:(CGFloat)cornerRadius forState:(UIControlState)state {
+//    [self setBackgroundImage:[UIImage imageWithColor:backgroundColor cornerRadius:(CGFloat)cornerRadius] forState:state];
+//}
 
-- (void)setBackgroundColor:(UIColor *)backgroundColor withCornerRadius:(CGFloat)cornerRadius forState:(UIControlState)state {
-    [self setBackgroundImage:[UIImage imageWithColor:backgroundColor cornerRadius:(CGFloat)cornerRadius] forState:state];
-}
+
 @end
