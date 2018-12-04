@@ -10,6 +10,10 @@
 		8207679021B641F200773946 /* custom_ui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8207678621B641F200773946 /* custom_ui.framework */; };
 		8207679521B641F200773946 /* custom_uiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8207679421B641F200773946 /* custom_uiTests.m */; };
 		8207679721B641F200773946 /* custom_ui.h in Headers */ = {isa = PBXBuildFile; fileRef = 8207678921B641F200773946 /* custom_ui.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		820767A521B6427100773946 /* CustomButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 820767A121B6427100773946 /* CustomButton.h */; };
+		820767A621B6427100773946 /* CustomView.h in Headers */ = {isa = PBXBuildFile; fileRef = 820767A221B6427100773946 /* CustomView.h */; };
+		820767A721B6427100773946 /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 820767A321B6427100773946 /* CustomButton.m */; };
+		820767A821B6427100773946 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 820767A421B6427100773946 /* CustomView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		8207678F21B641F200773946 /* custom-uiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "custom-uiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8207679421B641F200773946 /* custom_uiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = custom_uiTests.m; sourceTree = "<group>"; };
 		8207679621B641F200773946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		820767A121B6427100773946 /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
+		820767A221B6427100773946 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		820767A321B6427100773946 /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
+		820767A421B6427100773946 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,7 @@
 		8207678821B641F200773946 /* custom-ui */ = {
 			isa = PBXGroup;
 			children = (
+				820767A021B6427100773946 /* view */,
 				8207678921B641F200773946 /* custom_ui.h */,
 				8207678A21B641F200773946 /* Info.plist */,
 			);
@@ -86,6 +95,17 @@
 			path = "custom-uiTests";
 			sourceTree = "<group>";
 		};
+		820767A021B6427100773946 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				820767A121B6427100773946 /* CustomButton.h */,
+				820767A321B6427100773946 /* CustomButton.m */,
+				820767A221B6427100773946 /* CustomView.h */,
+				820767A421B6427100773946 /* CustomView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -94,6 +114,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8207679721B641F200773946 /* custom_ui.h in Headers */,
+				820767A621B6427100773946 /* CustomView.h in Headers */,
+				820767A521B6427100773946 /* CustomButton.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +215,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				820767A721B6427100773946 /* CustomButton.m in Sources */,
+				820767A821B6427100773946 /* CustomView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
