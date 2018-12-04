@@ -7,7 +7,6 @@
 //
 
 #import "CustomButton.h"
-#import "UIImage+UIImage_Utils.h"
 @implementation CustomButton
 
 - (void)setBorderColor:(UIColor *)borderColor {
@@ -45,7 +44,7 @@
     self.layer.shadowOpacity = shadowOpacity;
 }
 -(void)addDropShadowToButton:(CGRect)btnFrame{
-    self.layer.shadowColor = COLOR_GRAY_225.CGColor;
+    self.layer.shadowColor = [UIColor blackColor].CGColor;
     self.layer.shadowOffset = CGSizeMake(0, 1.5f);
     self.layer.shadowOpacity = 0.5f;
     self.layer.shadowRadius = 0.2f;
